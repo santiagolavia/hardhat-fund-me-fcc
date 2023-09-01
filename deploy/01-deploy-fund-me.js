@@ -3,12 +3,12 @@ const {
     developmentChains,
 } = require("../helper-hardhat-config.js")
 const { network } = require("hardhat")
+const { verify } = require("../utils/verify")
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deploy, log } = deployments
     const { deployer } = await getNamedAccounts()
     const chainId = network.config.chainId
-    const { verify } = require("../utils/verify")
 
     //When going local network we want to use mocks
 
@@ -29,7 +29,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
         log: true,
         waitConfirmations: network.config.blockConfirmations || 1,
     })
-
+    // This will verify if the network is not a test one
     if (
         !developmentChains.includes(network.name) &&
         process.env.ETHERSCAN_API_KEY

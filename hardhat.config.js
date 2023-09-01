@@ -4,6 +4,7 @@ require("hardhat-gas-reporter")
 require("dotenv").config()
 require("hardhat-deploy")
 require("solidity-coverage")
+require("@nomiclabs/hardhat-ethers")
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
@@ -48,6 +49,7 @@ module.exports = {
         outputFile: "gas-report.txt",
         noColors: true,
         coinmarketcap: COINMARKETCAP_API_KEY,
+        token: "ETH",
     },
     namedAccounts: {
         deployer: {
