@@ -49,6 +49,7 @@ describe("FundMe", async function () {
     describe("withdraw", async function () {
         beforeEach(async function () {
             await fundMe.fund({ value: sendValue })
+            // First we fund the contract for test the withdrawals
         })
         it("Withdraw ETH from a single founder", async function () {
             //Arrange

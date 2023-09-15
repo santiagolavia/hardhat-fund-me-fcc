@@ -5,6 +5,7 @@ require("dotenv").config()
 require("hardhat-deploy")
 require("solidity-coverage")
 require("@nomiclabs/hardhat-ethers")
+require("solidity-docgen")
 
 /** @type import('hardhat/config').HardhatUserConfig */
 
@@ -60,4 +61,5 @@ module.exports = {
             default: 1,
         },
     },
+    docgen: {},
 }
