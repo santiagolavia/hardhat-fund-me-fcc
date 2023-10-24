@@ -746,7 +746,7 @@
 
 "@nomiclabs/hardhat-solhint@^3.0.1":
   version "3.0.1"
-  resolved "https://registry.npmjs.org/@nomiclabs/hardhat-solhint/-/hardhat-solhint-3.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/@nomiclabs/hardhat-solhint/-/hardhat-solhint-3.0.1.tgz#20e96c3dcd674b8d87ef90c2314db3b5fe551b9c"
   integrity sha512-GqDoStxL1aA9hZul9HRdk+3eEZ/XLBwvIlz3/EJUusUsoadNYEnio9aYOsBeNeZWo+B/Fd3EgMXgbf9wWQLyRA==
   dependencies:
     solhint "^3.4.0"
